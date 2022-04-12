@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,38 +14,95 @@
     <!-- กำหนดรูปแบบ -->
     <style>
       /* ของ span */
-      span01{
+      span01 {
         font-size: 20px;
         font-family: roboto;
         font-weight: light;
       }
-      span02{
+      span02 {
         font-size: 30px;
         font-family: roboto;
         font-weight: bold;
       }
     </style>
   </head>
-  <body>
+  <body align="center">
     <h1>Apple</h1>
+    <div>
+      <img src="../image/Apple_logo_black.svg" alt="" width="100px" />
+    </div>
     <!-- span = จัดกลุ่มข้อมูล หรือเป็นกล่อง -->
     <span01>
       Apple Inc. is an American multinational technology company that
-      specializes <br/>
+      specializes <br />
       in consumer electronics, software and online services.
     </span01>
-    <hr>
+    <hr />
     <span02>
-      Founded: April 1, 1976, Los Altos, California, United States <br>
-      Headquarters: Cupertino, California, United States <br>
-      Founders: Steve Jobs, Steve Wozniak, Ronald Wayne <br>
-      Products: iPhone, Apple Watch, iPad, Apple TV, macOS, iOS, AirTag, MORE <br>
-      Subsidiaries: Beats Electronics, Beddit, NextVR, Inc., Apple Store, MORE <br>
+      Founded: April 1, 1976, Los Altos, California, United States <br />
+      Headquarters: Cupertino, California, United States <br />
+      Founders: Steve Jobs, Steve Wozniak, Ronald Wayne <br />
+      Products: iPhone, Apple Watch, iPad, Apple TV, macOS, iOS, AirTag, MORE
+      <br />
+      Subsidiaries: Beats Electronics, Beddit, NextVR, Inc., Apple Store, MORE
+      <br />
     </span02>
-    <hr>
     <!-- div เหมือน span แต่เวลาเริ่ม จะมีการเริ่มบรรทัดถัดไปก่อน -->
-    <div>
-      <img src="../image/Apple_logo_black.svg" alt="" width="100px">
-    </div>
+    <!-- การสร้าง form เพื่อรับข้อมูลมาประมวลผล -->
+    <hr />
+    <h2>ลงทะเบียน</h2>
+    <form>
+      <!-- สอนทำ form link:https://www.youtube.com/watch?v=ak-cnr0qL74&list=PLltVQYLz1BMDf-N2ZmyJKEv4VlpM_9m67&index=16 -->
+      <div>
+        <label for="idmember">id</label>
+        <input type="number" name="idmember" placeholder="ใส่ตัวเลข 3 หลัก" />
+      </div>
+      <div>
+        <label for="firstname">ชื่อจริง</label>
+        <input type="text" name="fname" required/>
+      </div>
+      <div>
+        <label for="lastname">นามสกุล</label>
+        <input type="text" name="lname" required/>
+      </div>
+      <div>
+        <label for="">ที่อยู่</label>
+        <textarea name="" id="" cols="20" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="date">วันเกิด</label>
+        <input type="date" name="birthdate" width="10px" />
+      </div>
+      <div>
+        <label for="age">อายุ</label>
+        <input type="range" name="age" value="100" />
+      </div>
+      <div>
+        <label for="edu">ระดับการศึกษา</label>
+        <select name="edu">
+          <option value="1">ประถม</option>
+          <option value="2">มัธยม</option>
+        </select>
+      </div>
+      <div>
+        <label for="gender">เพศ</label>
+        <input type="radio" name="gender" />ชาย
+        <input type="radio" name="gender" />หญิง
+      </div>
+      <div>
+        <label for="hobby">งานอดิเรก</label>
+        <input type="checkbox" name="hobby">เขียนเว็ป
+        <input type="checkbox" name="hobby">เล่นเกม  
+      </div>
+      <div>
+        <label for="doc">แนบเอกสาร</label>
+        <input type="file" name="doc">
+      </div>
+      <div>
+        <!-- ใช้ button ก็ได้ -->
+        <input type="submit" value="บันทึกข้อมูล">
+        <button type="reset">ล้างข้อมูล</button>
+      </div>
+    </form>
   </body>
-</html>   
+</html>
