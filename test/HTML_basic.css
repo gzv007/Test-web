@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* font-family: sans-serif; */
 }
 .main{
     width: 360px;
@@ -10,7 +9,6 @@
     height: 560px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     border-radius: 50px;
-    /* overflow: hidden; */
     position: relative;
 }
 .tag{
@@ -20,8 +18,8 @@
     transform: translateX(-50%);
     z-index: 999;
     background: tomato;
-    padding: .5rem 2rem;
-    border-radius: 5px;
+    padding: .3rem 2rem;
+    border-radius: 50px;
     color: #fff;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
@@ -30,11 +28,9 @@
     overflow: hidden;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    position: relative;
 }
 .img img{
     width: 100%;
-    overflow: hidden;
 }
 .content{
     text-align: center;
